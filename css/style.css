@@ -1,0 +1,69 @@
+/* *######### General Styles ##########*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+/* ~      home      */
+#home {
+  & {
+    background: linear-gradient(rgba(0, 0, 0, 0.5) 0% 100%),
+      url(../images/lone-tree.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+  .container .row .heading{
+    position: relative;
+    text-align: center;
+  }
+  .container .row .heading span {
+    color: #5dbcc2;
+  }
+  .container .row .heading::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 50%;
+    background-color: #5dbcc2;
+    left: 50%;
+  }
+  .container .row .heading::before {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 50%;
+    background-color: #5dbcc2;
+    right: 50%;
+    top: 30px;
+  }
+  .container .row .contain{
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+}
